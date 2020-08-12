@@ -16,6 +16,11 @@ Selenium requires a driver to interface with a browser. See "Drivers" at https:/
 
 Use
 
+In the script find the two lines with
+UNAME=""
+PASS=""
+and add the hotel's username/password between the double-quotes.
+
 Run the script with
 
 python autokbs.py
@@ -30,6 +35,6 @@ Follow the gui to
 
 Rationale
 
-The police used to distribute a little program that accepted XML files produced by hotel management software, to upload the data to their servers. Somehow, they decided to spend more money to make an impractical web interface with less features.
+The police used to distribute a little program that accepted XML files produced by hotel management software, and uploaded the data to their servers. Somehow, they decided to spend more money to make an impractical web interface with less features.
 
 

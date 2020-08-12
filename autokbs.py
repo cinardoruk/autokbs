@@ -25,6 +25,9 @@ TODO
     -
 '''
 
+UNAME=""
+PASS=""
+
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
@@ -84,7 +87,7 @@ def gui():
     btn2.grid(column=2, row=2)
     window.mainloop()
 
-#starting webdriver, getting website, filling in uname and pass
+#starting webdriver, getting website, filling in uname and pass(stored in UNAME and PASS, first two sloc in script.
 def siteAccess():    
     global driver
     driver = webdriver.Chrome()
@@ -92,8 +95,8 @@ def siteAccess():
     
     webdriver.DesiredCapabilities.CHROME["unexpectedAlertBehavious"] = "accept"
     
-    uname = "info@hotelmydream.com"
-    pswd = "575260"
+    uname = UNAME
+    pswd = PASS
     
     u = driver.find_element_by_name("txtkullaniciadi")
     u.clear()
