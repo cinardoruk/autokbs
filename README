@@ -1,0 +1,35 @@
+autokbs
+
+All hotels in Turkey are required to share customer data(ID/Passport number, check-in/out dates etc.) with the national police using their website(https://kbs.egm.gov.tr/)
+
+The website accepts data entry manually, or through uploading Excel files. However, the file upload functionality doesn't work.
+
+This script uses Selenium to navigate to the website, log in using a hotel's credentials, then do the data entry tasks using data taken from an Excel file. 
+
+Installation 
+
+Install the necessary Python modules:
+
+pip install selenium tkinter pandas
+
+Selenium requires a driver to interface with a browser. See "Drivers" at https://pypi.org/project/selenium/ to learn how to get the appropriate driver.
+
+Use
+
+Run the script with
+
+python autokbs.py
+
+Under Windows, it's recommended to create a shortcut icon which will execute this command.
+
+Make separate Excel files for that day's check-ins and check-outs using your hotel management software.
+
+Follow the gui to
+1-remove the day's check-outs
+2-add the day's check-ins
+
+Rationale
+
+The police used to distribute a little program that accepted XML files produced by hotel management software, to upload the data to their servers. Somehow, they decided to spend more money to make an impractical web interface with less features.
+
+
